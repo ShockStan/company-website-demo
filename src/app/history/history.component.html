@@ -1,0 +1,29 @@
+<div class="w-screen h-screen">
+    <div class="bg-[url('/../assets/bg1.jpg')] bg-no-repeat bg-cover w-full h-full">
+        <div class="w-full h-[60px] overflow-hidden bg-white">
+            <div class="relative left-[250px] top-[10px]">
+                <a href="#home">
+                <img src="../../assets/logo.svg" alt="logo" class="w-[40px] h-[40px]" />
+                </a>
+            </div>
+            <div class="italic text-[15px] text-slate-700 font-bold font-serif h-[60px] relative -top-[20px] left-[950px] cursor-pointer">
+                <span><a href="#history">01.HISTORY</a></span>
+                <span class="relative left-[40px]"><a href="#team">02.TEAM</a></span>
+            </div>
+        </div>
+        <div class="w-full h-[250px] overflow-hidden">
+            <div class="ab w-min font-bold font-sans text-[180px] text-gray-400 leading-[250px] relative left-[250px]">01.</div>
+            <div class="-top-[137px] font-sans text-[40px] text-slate-700 relative left-[466px]">HISTORY</div>
+            <div class="ab absolute font-sans text-[20px] text-black font-bold w-[60%] top-[140%] left-[470px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has lorem ipsum</div>
+        </div>
+        <div class="w-full h-[180px] bg-slate-700 absolute top-[188%] -translate-y-1/2 overflow-y-hidden">
+            <div class="w-[70%] relative left-[15%]">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="carouselConfig">
+                <div *ngFor="let item of items" class="m-2">
+                    <img class="h-[150px]" src="../../assets/{{item}}" alt="image"  ngxSlickItem/>
+                </div>
+            </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</div>

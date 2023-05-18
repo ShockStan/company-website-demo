@@ -1,0 +1,51 @@
+<div class="w-screen h-screen overflow-hidden">
+    <div class="bg-[url('/../assets/bg1.jpg')] bg-no-repeat bg-cover h-full w-full overflow-hidden">
+        <div class="w-full h-[250px] bg-[#f2f2f2] overflow-hidden">
+            <div class="w-min font-bold font-sans text-[180px] text-gray-400 leading-[250px] relative left-[250px]">02.</div>
+            <div class="-top-[137px] font-sans text-[40px] text-slate-700 relative left-[466px]">CLIMB</div>
+            <div class="relative font-sans text-[20px] text-black w-[60%] -top-[190px] left-[592px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has lorem ipsum</div>
+        </div>
+        <div class=" overflow-hidden w-full h-[50px] bg-slate-700">
+            <div [ngClass]="isOne?'bg-gray-400 text-slate-700':'bg-slate-700 text-gray-400'" class="cursor-pointer left-[250px] relative h-full w-[150px]" (click)="changeTab()" ><span class="relative left-[6px] underline font-mono text-[25px] leading-[50px]">MOUNTAIN 1</span></div>
+            <div [ngClass]="isOne?'text-gray-400 bg-slate-700':'text-slate-700 bg-gray-400'" class="cursor-pointer relative left-[420px] -top-[50px] h-full w-[150px]" (click)="changeTab()"><span class="relative left-[6px] underline font-mono text-[25px] leading-[50px]">MOUNTAIN 2</span></div>
+        </div>
+        <div *ngIf="isOne" class="left-[250px] top-[100px] relative w-[300px] h-[250px] bg-white opacity-80">
+            <span class="text-slate-700 font-mono text-[40px] relative left-[20px]">SCHEDULE</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">15 May</span>
+            <span class="text-black font-mono text-[20px] relative left-[106px]">Something</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">30 September</span>
+            <span class="text-black font-mono text-[20px] relative left-[40px]">Something</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">20 April</span>
+            <span class="text-black font-mono text-[20px] relative left-[84px]">Something</span>
+        </div>
+        <div *ngIf="!isOne" class="left-[250px] top-[100px] relative w-[300px] h-[250px] bg-white opacity-80">
+            <span class="text-slate-700 font-mono text-[40px] relative left-[20px]">SCHEDULE</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">18 May</span>
+            <span class="text-black font-mono text-[20px] relative left-[102px]">Lorem Ipsum</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">25 September</span>
+            <span class="text-black font-mono text-[20px] relative left-[36px]">Lorem Ipsim</span>
+            <br>
+            <br>
+            <span class="text-black font-mono text-[20px] relative left-[20px]">10 April</span>
+            <span class="text-black font-mono text-[20px] relative left-[80px]">Lorem Ipsum</span>
+        </div>
+        <div class="w-full h-[50px] bg-slate-700 overflow-hidden absolute top-[300%] -translate-y-1/2">
+            <div class="relative left-[250px] top-[5px]"><a href="#home"><img src="../../assets/logo.svg" class="w-[40px] h-[40px]" alt="logo"/></a></div>
+            <div class="relative left-[300px] -top-[36px]">
+                <p class="text-[14px] text-gray-400 font-mono">LOSANGELES</p>
+                <p class="text-[15px] text-gray-400 font-mono">MOUNTAINS</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
